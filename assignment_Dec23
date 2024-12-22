@@ -1,0 +1,22 @@
+1. Get all the transactions- I have 
+2. Get the Average of all transactions 
+3. Filter the transactions where total>avg
+
+select * from transactions_payment
+where tot
+
+
+--4. Find all customers who have made transactions in Bengaluru or Chennai.
+
+select customer_name,city from transactions_payment 
+where city in
+(
+select  distinct city from transactions_payment where city in ('Bengaluru','Chennai')
+)
+
+
+
+
+
+
+
